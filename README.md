@@ -1,4 +1,23 @@
-# WhereToWatch — Netlify version
+# 🎬 WhereToWatch
+
+A movie and TV show discovery website.
+
+🌐 **LIVE WEBSITE:** https://movie-discovery-khg1.netlify.app/
+
+### Features
+- Search movies and TV shows.
+- View posters, ratings and descriptions.
+- Explore cast members.
+- Discover where to watch.
+- Explore other works by actors.
+
+### Technologies Used
+- HTML
+- CSS
+- JavaScript
+- TMDB API
+- Netlify
+- # WhereToWatch — Netlify version
 
 ## Deploy
 1. Push these files to a GitHub repository:
