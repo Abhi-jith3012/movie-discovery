@@ -1,34 +1,21 @@
-# Where To Watch — starter website
+# WhereToWatch — Netlify version
 
-This is a dark, responsive prototype for your idea.
+## Deploy
+1. Push these files to a GitHub repository:
+   - `index.html`
+   - `netlify.toml`
+   - `netlify/functions/tmdb.js`
+2. In Netlify, choose **Add new site → Import an existing project** and connect that GitHub repository.
+3. In the Netlify site dashboard, open **Site configuration → Environment variables**.
+4. Add `TMDB_API_KEY` with your TMDB API key as its value.
+5. Trigger a deploy (or redeploy the latest deploy).
 
-## What it already has
-- Search UI
-- Movie/series/reality-show style results
-- Streaming provider section
-- IMDb rating + IMDb link
-- Main cast
-- Awards section
-- Responsive mobile layout
-- Demo titles so it works immediately
+The browser calls the Netlify Function at `/.netlify/functions/tmdb`; the function adds the secret API key server-side. Do not put the key in `index.html` or commit it to GitHub.
 
-## Turning it into a live-data website
+## Features
+- Live popular titles and multi-search (movies and TV)
+- Title details, ratings, genres, overview and cast
+- Watch-provider data where TMDB has it (India first, then US fallback)
+- Cast member combined credits
 
-Use TMDB as the main data source. TMDB provides movie, TV and person search/data, credits, and country-specific watch-provider information. Its watch-provider data is powered by a JustWatch partnership and requires the required attribution.
-
-You will need a TMDB API key/token and a small backend/server function so your secret is not exposed in the browser.
-
-Useful TMDB endpoints to wire in:
-- /search/multi
-- /movie/{id}
-- /movie/{id}/credits
-- /tv/{id}
-- /tv/{id}/credits
-- /movie/{id}/watch/providers
-- /tv/{id}/watch/providers
-
-IMDb ratings/IDs can be displayed when the matching IMDb data is available.
-
-Important: streaming availability changes by country and over time, so the production site should let the user choose a country (defaulting to India if that is your target market) and show a "last checked" time.
-
-For commercial use, check TMDB's current licensing/attribution requirements rather than assuming the free developer terms apply.
+Streaming availability and other metadata depend on TMDB coverage. Awards are not supplied by this TMDB integration.

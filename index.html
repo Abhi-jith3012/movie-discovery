@@ -7,7 +7,7 @@
 <style>
 :root{--bg:#08090d;--panel:#11131a;--panel2:#171a23;--text:#f5f7fb;--muted:#9da4b5;--accent:#8b5cf6;--accent2:#ec4899;--line:#242936;--green:#22c55e}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,#1c1234 0,#08090d 34%),#08090d;color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}
-header{padding:22px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.05);backdrop-filter:blur(12px);position:sticky;top:0;background:rgba(8,9,13,.75);z-index:10}
+header{padding:22px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.05);backdrop-filter:blur(12px);position:sticky;top:0;background:rgba(8,9,13,.88);z-index:10}
 .logo{font-weight:900;font-size:22px;letter-spacing:-.8px}.logo span{color:var(--accent)}
 nav{display:flex;gap:18px;color:var(--muted);font-size:14px}nav a{color:inherit;text-decoration:none}
 .hero{padding:80px 6% 45px;text-align:center;max-width:1050px;margin:auto}.eyebrow{color:#b99cff;font-size:13px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
@@ -17,7 +17,8 @@ h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:16px 0;letter-spacing:-
 .search input{flex:1;background:transparent;border:0;outline:0;color:#fff;font-size:16px;padding:16px}.search button,.primary{border:0;border-radius:13px;padding:0 23px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:800;cursor:pointer}
 .quick{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:16px}.chip{border:1px solid var(--line);background:#10121a;color:#cbd0dc;border-radius:999px;padding:8px 13px;cursor:pointer;font-size:13px}
 main{max-width:1180px;margin:auto;padding:0 6% 80px}.section-title{display:flex;justify-content:space-between;align-items:end;margin:25px 0 14px}.section-title h2{margin:0;font-size:22px}.section-title span{color:var(--muted);font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;overflow:hidden;cursor:pointer;transition:.2s}.card:hover{transform:translateY(-5px);border-color:#4a3b72}.poster{height:270px;background:linear-gradient(135deg,#25283a,#11131a);display:flex;align-items:center;justify-content:center;color:#737b8d;font-weight:700}.poster img{width:100%;height:100%;object-fit:cover}.card-body{padding:13px}.card-title{font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta{font-size:12px;color:var(--muted);margin-top:6px}.rating{color:#ffd166;font-weight:800}.result{display:none;background:linear-gradient(145deg,#141722,#0d0f15);border:1px solid var(--line);border-radius:24px;padding:22px;margin-top:30px}.result.show{display:block}.back{background:none;border:0;color:#a78bfa;cursor:pointer;margin-bottom:15px}.hero-result{display:grid;grid-template-columns:220px 1fr;gap:25px}.hero-poster{min-height:330px;background:#171a23;border-radius:16px;overflow:hidden}.hero-poster img{width:100%;height:100%;object-fit:cover}.kicker{color:#b99cff;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:1px}.result h2{font-size:38px;margin:7px 0}.facts{display:flex;gap:10px;flex-wrap:wrap;margin:13px 0}.fact{padding:7px 10px;background:#1a1d28;border:1px solid #2a2f3d;border-radius:9px;color:#dbe0eb;font-size:13px}.overview{color:#b5bbc9;line-height:1.65}.providers{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}.provider{padding:9px 12px;border-radius:10px;background:#171b25;border:1px solid #303646;font-weight:700}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.box{background:#11131a;border:1px solid var(--line);border-radius:16px;padding:18px}.box h3{margin:0 0 12px}.people{display:flex;gap:12px;overflow:auto}.person{min-width:110px}.avatar{width:80px;height:80px;border-radius:50%;background:#222637;overflow:hidden;margin-bottom:8px}.avatar img{width:100%;height:100%;object-fit:cover}.person b{font-size:13px;display:block}.person small{color:var(--muted)}.empty{text-align:center;padding:40px;color:var(--muted);display:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;overflow:hidden;cursor:pointer;transition:.2s}.card:hover{transform:translateY(-5px);border-color:#4a3b72}.poster{height:270px;background:linear-gradient(135deg,#25283a,#11131a);display:flex;align-items:center;justify-content:center;color:#737b8d;font-weight:700}.poster img{width:100%;height:100%;object-fit:cover}.card-body{padding:13px}.card-title{font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta{font-size:12px;color:var(--muted);margin-top:6px}.rating{color:#ffd166;font-weight:800}
+.result{display:none;background:linear-gradient(145deg,#141722,#0d0f15);border:1px solid var(--line);border-radius:24px;padding:22px;margin-top:30px}.result.show{display:block}.back{background:none;border:0;color:#a78bfa;cursor:pointer;margin-bottom:15px}.hero-result{display:grid;grid-template-columns:220px 1fr;gap:25px}.hero-poster{min-height:330px;background:#171a23;border-radius:16px;overflow:hidden}.hero-poster img{width:100%;height:100%;object-fit:cover}.kicker{color:#b99cff;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:1px}.result h2{font-size:38px;margin:7px 0}.facts{display:flex;gap:10px;flex-wrap:wrap;margin:13px 0}.fact{padding:7px 10px;background:#1a1d28;border:1px solid #2a2f3d;border-radius:9px;color:#dbe0eb;font-size:13px}.overview{color:#b5bbc9;line-height:1.65}.providers{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}.provider{padding:9px 12px;border-radius:10px;background:#171b25;border:1px solid #303646;font-weight:700}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.box{background:#11131a;border:1px solid var(--line);border-radius:16px;padding:18px}.box h3{margin:0 0 12px}.people{display:flex;gap:12px;overflow:auto}.person{min-width:110px}.avatar{width:80px;height:80px;border-radius:50%;background:#222637;overflow:hidden;margin-bottom:8px}.avatar img{width:100%;height:100%;object-fit:cover}.person b{font-size:13px;display:block}.person small{color:var(--muted)}.empty{text-align:center;padding:40px;color:var(--muted);display:none}.status{text-align:center;color:var(--muted);padding:20px;min-height:24px}
 @media(max-width:700px){nav{display:none}.hero{padding-top:55px}.search{flex-direction:column;background:transparent;border:0;box-shadow:none;gap:8px}.search input{background:#11131a;border:1px solid #303544;border-radius:13px}.search button{height:52px}.hero-result{grid-template-columns:1fr}.hero-poster{max-width:240px;margin:auto;height:360px;min-height:0}.two{grid-template-columns:1fr}}
 </style>
 </head>
@@ -26,39 +27,83 @@ main{max-width:1180px;margin:auto;padding:0 6% 80px}.section-title{display:flex;
 <section class="hero">
 <div class="eyebrow">Movies · Series · Reality · OTT</div>
 <h1>Find it. Know it.<br><span style="background:linear-gradient(90deg,#a78bfa,#f472b6);-webkit-background-clip:text;color:transparent">Watch it.</span></h1>
-<p>Search any movie or show and get its streaming availability, IMDb rating, cast, other work and awards — all in one place.</p>
-<div class="search"><input id="search" placeholder="Search a movie, series or reality show…" autocomplete="off"><button onclick="searchTitle()">Search</button></div>
-<div class="quick"><button class="chip" onclick="demo('Stranger Things')">Stranger Things</button><button class="chip" onclick="demo('Interstellar')">Interstellar</button><button class="chip" onclick="demo('Wednesday')">Wednesday</button></div>
+<p>Search movies and shows to explore ratings, cast, streaming availability and more — all in one place.</p>
+<div class="search"><input id="search" placeholder="Search a movie, series or reality show…" autocomplete="off"><button id="searchBtn">Search</button></div>
+<div class="quick"><button class="chip" data-query="Stranger Things">Stranger Things</button><button class="chip" data-query="Interstellar">Interstellar</button><button class="chip" data-query="Wednesday">Wednesday</button></div>
 </section>
 <main>
+<div id="status" class="status">Search for any movie or TV show to get started.</div>
 <div id="result" class="result"></div>
-<section id="discover"><div class="section-title"><h2>Try the demo</h2><span>Connect TMDB for live data</span></div><div class="grid" id="cards"></div></section>
-<div class="empty" id="empty">No result found. Try another title.</div>
+<section id="discover"><div class="section-title"><h2>Popular right now</h2><span>Live results from TMDB</span></div><div class="grid" id="cards"></div></section>
+<div class="empty" id="empty">No results found. Try another title.</div>
 </main>
 <script>
-const demoData={
-"stranger things":{title:"Stranger Things",year:"2016–",type:"TV Series",rating:"8.6",poster:"https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",genres:"Sci-Fi · Mystery · Drama",providers:["Netflix"],overview:"When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",cast:[["Millie Bobby Brown","Eleven"],["Finn Wolfhard","Mike Wheeler"],["David Harbour","Jim Hopper"],["Winona Ryder","Joyce Byers"]],awards:"Multiple major awards & nominations",imdb:"tt4574334"},
-"interstellar":{title:"Interstellar",year:"2014",type:"Movie",rating:"8.7",poster:"https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",genres:"Sci-Fi · Drama · Adventure",providers:["Check live availability"],overview:"Explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",cast:[["Matthew McConaughey","Cooper"],["Anne Hathaway","Brand"],["Jessica Chastain","Murph"],["Michael Caine","Professor Brand"]],awards:"Academy Award winner + major nominations",imdb:"tt0816692"},
-"wednesday":{title:"Wednesday",year:"2022–",type:"TV Series",rating:"8.0",poster:"https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",genres:"Comedy · Mystery · Fantasy",providers:["Netflix"],overview:"Wednesday Addams navigates school, friendship and a murder mystery while embracing her unusual talents.",cast:[["Jenna Ortega","Wednesday Addams"],["Catherine Zeta-Jones","Morticia"],["Luis Guzmán","Gomez"],["Emma Myers","Enid"]],awards:"Major awards nominations",imdb:"tt13443470"}
-};
-function demo(q){document.getElementById('search').value=q;searchTitle()}
-function searchTitle(){
- const q=document.getElementById('search').value.trim().toLowerCase();
- const d=demoData[q] || Object.values(demoData).find(x=>x.title.toLowerCase().includes(q));
- if(!d){document.getElementById('result').className='result';document.getElementById('empty').style.display='block';return}
- document.getElementById('empty').style.display='none';
- const r=document.getElementById('result');r.className='result show';
- r.innerHTML=`<button class="back" onclick="document.getElementById('result').className='result'">← Back</button>
- <div class="hero-result"><div class="hero-poster"><img src="${d.poster}" alt="${d.title}"></div><div>
- <div class="kicker">${d.type}</div><h2>${d.title}</h2><div class="facts"><span class="fact">${d.year}</span><span class="fact">${d.genres}</span><span class="fact">⭐ IMDb ${d.rating}</span></div>
- <p class="overview">${d.overview}</p><h3>Where can I watch it?</h3><div class="providers">${d.providers.map(p=>`<span class="provider">▶ ${p}</span>`).join('')}</div>
- <div style="margin-top:18px"><a href="https://www.imdb.com/title/${d.imdb}/" target="_blank" class="primary" style="display:inline-block;padding:12px 16px;text-decoration:none">Open IMDb ↗</a></div>
- </div></div>
- <div class="two"><div class="box"><h3>🎭 Main Cast</h3><div class="people">${d.cast.map(c=>`<div class="person"><div class="avatar"></div><b>${c[0]}</b><small>${c[1]}</small></div>`).join('')}</div></div>
- <div class="box"><h3>🏆 Awards</h3><p style="color:#b5bbc9">${d.awards}</p><p style="color:#8f96a6;font-size:12px">Live award details can be connected to an external data source in the production version.</p></div></div>`;
+const IMG='https://image.tmdb.org/t/p/';
+const statusEl=document.getElementById('status');
+const resultEl=document.getElementById('result');
+const cardsEl=document.getElementById('cards');
+const emptyEl=document.getElementById('empty');
+async function tmdb(path){
+  const response=await fetch('/.netlify/functions/tmdb?path='+encodeURIComponent(path));
+  const data=await response.json();
+  if(!response.ok) throw new Error(data.error || 'Could not load TMDB data.');
+  return data;
 }
-function card(d){return `<div class="card" onclick="demo('${d.title}')"><div class="poster"><img src="${d.poster}" alt=""></div><div class="card-body"><div class="card-title">${d.title}</div><div class="meta">${d.year} · <span class="rating">★ ${d.rating}</span></div></div></div>`}
-document.getElementById('cards').innerHTML=Object.values(demoData).map(card).join('');
-document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')searchTitle()});
+function escapeHtml(value=''){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function poster(path,size='w500'){return path?IMG+size+path:'';}
+function makeCard(item){
+ const title=item.title||item.name||'Untitled';
+ const year=(item.release_date||item.first_air_date||'').slice(0,4);
+ const type=item.media_type==='tv'?'TV':'Movie';
+ return `<article class="card" data-id="${item.id}" data-type="${item.media_type||type.toLowerCase()}"><div class="poster">${item.poster_path?`<img loading="lazy" src="${poster(item.poster_path)}" alt="">`:'No poster available'}</div><div class="card-body"><div class="card-title">${escapeHtml(title)}</div><div class="meta">${year||'Year unavailable'} · <span class="rating">★ ${(item.vote_average||0).toFixed(1)}</span> · ${type}</div></div></article>`;
+}
+async function loadPopular(){
+ try{
+  const data=await tmdb('/trending/all/week');
+  cardsEl.innerHTML=(data.results||[]).filter(x=>x.media_type==='movie'||x.media_type==='tv').slice(0,12).map(makeCard).join('');
+ }catch(e){statusEl.textContent=e.message+' Check your Netlify TMDB_API_KEY setting.';}
+}
+async function searchTitle(query){
+ const q=(query??document.getElementById('search').value).trim();
+ if(!q)return;
+ document.getElementById('search').value=q;
+ resultEl.className='result';emptyEl.style.display='none';statusEl.textContent='Searching TMDB…';
+ try{
+  const data=await tmdb('/search/multi?query='+encodeURIComponent(q)+'&include_adult=false');
+  const results=(data.results||[]).filter(x=>x.media_type==='movie'||x.media_type==='tv');
+  if(!results.length){statusEl.textContent='';emptyEl.style.display='block';cardsEl.innerHTML='';return;}
+  statusEl.textContent=`Found ${results.length} results. Select one to see details.`;
+  cardsEl.innerHTML=results.slice(0,20).map(makeCard).join('');
+  document.getElementById('discover').scrollIntoView({behavior:'smooth',block:'start'});
+ }catch(e){statusEl.textContent=e.message;}
+}
+async function showDetails(id,type){
+ statusEl.textContent='Loading title details…';resultEl.className='result';emptyEl.style.display='none';
+ try{
+  const [d,credits,providers]=await Promise.all([
+   tmdb(`/${type}/${id}`),tmdb(`/${type}/${id}/credits`),tmdb(`/${type}/${id}/watch/providers`)
+  ]);
+  const title=d.title||d.name||'Untitled';
+  const year=(d.release_date||d.first_air_date||'').slice(0,4);
+  const cast=(credits.cast||[]).slice(0,10);
+  const country=providers.results?.IN||providers.results?.US;
+  const stream=[...(country?.flatrate||[]),...(country?.rent||[]),...(country?.buy||[])];
+  const unique=[...new Map(stream.map(x=>[x.provider_id,x])).values()];
+  const castHtml=cast.map(p=>`<div class="person"><div class="avatar">${p.profile_path?`<img loading="lazy" src="${poster(p.profile_path,'w185')}" alt="">`:''}</div><b>${escapeHtml(p.name)}</b><small>${escapeHtml(p.character||'Cast')}</small></div>`).join('');
+  resultEl.innerHTML=`<button class="back" id="backBtn">← Back to results</button><div class="hero-result"><div class="hero-poster">${d.poster_path?`<img src="${poster(d.poster_path)}" alt="">`:'No poster available'}</div><div><div class="kicker">${type==='tv'?'TV Series':'Movie'}</div><h2>${escapeHtml(title)}</h2><div class="facts"><span class="fact">${year||'Year unavailable'}</span><span class="fact">⭐ ${Number(d.vote_average||0).toFixed(1)} / 10</span><span class="fact">${escapeHtml((d.genres||[]).map(g=>g.name).join(' · ')||'Genre unavailable')}</span></div><p class="overview">${escapeHtml(d.overview||'No overview available.')}</p><h3>Where can I watch it?</h3><div class="providers">${unique.length?unique.map(p=>`<span class="provider">${escapeHtml(p.provider_name)}</span>`).join(''):'No streaming provider data available for India. Try another country or check a streaming service directly.'}</div>${country?.link?`<p><a style="color:#b99cff" target="_blank" rel="noopener" href="${country.link}">View provider details ↗</a></p>`:''}<p style="color:#8f96a6;font-size:12px">Streaming availability is supplied by TMDB and may vary by region.</p></div></div><div class="two"><div class="box"><h3>🎭 Cast</h3><div class="people">${castHtml||'Cast information unavailable.'}</div></div><div class="box"><h3>More by the cast</h3><p style="color:#b5bbc9">Select an actor below to explore their other credits.</p><div class="providers">${cast.slice(0,6).map(p=>`<button class="chip personWorks" data-person="${p.id}" data-name="${escapeHtml(p.name)}">${escapeHtml(p.name)}</button>`).join('')}</div><div id="works" class="meta"></div></div></div>`;
+  resultEl.className='result show';statusEl.textContent='';resultEl.scrollIntoView({behavior:'smooth',block:'start'});
+  document.getElementById('backBtn').onclick=()=>{resultEl.className='result';document.getElementById('discover').scrollIntoView({behavior:'smooth'});};
+  document.querySelectorAll('.personWorks').forEach(b=>b.addEventListener('click',()=>showPersonWorks(b.dataset.person,b.dataset.name)));
+ }catch(e){statusEl.textContent=e.message;}
+}
+async function showPersonWorks(id,name){
+ const el=document.getElementById('works');el.textContent=`Loading credits for ${name}…`;
+ try{const d=await tmdb(`/person/${id}/combined_credits`);const items=(d.cast||[]).sort((a,b)=>(b.popularity||0)-(a.popularity||0)).slice(0,8);el.innerHTML=items.map(x=>`<div style="padding:5px 0">${escapeHtml(x.title||x.name)} <span style="color:#8f96a6">(${(x.release_date||x.first_air_date||'').slice(0,4)})</span></div>`).join('')||'No other credits found.';}catch(e){el.textContent=e.message;}
+}
+document.getElementById('searchBtn').addEventListener('click',()=>searchTitle());
+document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')searchTitle();});
+document.querySelectorAll('.chip[data-query]').forEach(b=>b.addEventListener('click',()=>searchTitle(b.dataset.query)));
+cardsEl.addEventListener('click',e=>{const card=e.target.closest('.card');if(card)showDetails(card.dataset.id,card.dataset.type);});
+loadPopular();
 </script>
 </body></html>
